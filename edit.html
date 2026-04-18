@@ -1,7 +1,9 @@
-<!DOCTYPE html><html lang="ar">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>تحديث الأسعار</title><style>
+<title>تحديث الأسعار</title>
+<style>
 
 body{
 background:#111;
@@ -34,7 +36,18 @@ h2{
 margin-top:30px;
 }
 
-</style></head><body><h2>تحديث تسعير الصرافة</h2><textarea id="msg" placeholder="الصق رسالة الواتساب هنا"></textarea><br><button onclick="updatePrices()">تحديث الأسعار</button>
+</style>
+</head>
+<body>
+
+<h2>تحديث تسعير الصرافة</h2>
+
+<textarea id="msg" placeholder="الصق رسالة الواتساب هنا"
+onpaste="setTimeout(updatePrices, 100)"></textarea>
+
+<br>
+
+<button onclick="updatePrices()">تحديث الأسعار</button>
 
 <script>
 
@@ -69,5 +82,7 @@ alert("تم تحديث الأسعار بنجاح");
 
 }
 
-</script></body>
+</script>
+
+</body>
 </html>
